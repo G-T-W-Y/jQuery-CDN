@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery CDN</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+</head>
+
+<body>
+    <a class="stop-btn-animation linear-gradient">stop button animation</a>
+    <a class="up" href="#up"></a>
+    <div class="flex">
+        <div class="col-1">
+            <section class="intro" id="up">
+                <h2>jQuery Intro</h2>
+                <p class="hide">If you click on me, I will disappear.</p>
+                <p class="hide">Click me away!</p>
+                <p class="hide">Click me too!</p>
+                <span class="color">Point at me and I will turn red.</span>
+                <span class="on">Click or move the mouse pointer over this paragraph.</span>
+            </section>
+            <section class="effects">
+                <h2>jQuery Effects</h2>
+                <div>
+                    <p class="hide-show">If you click on the "Hide" button, I will disappear.</p>
+                    <button class="btn" id="hide">Hide</button>
+                    <button class="btn" id="show">Show</button>
+                </div>
+                <div>
+                    <p class="toggle">This is a paragraph with little content.</p>
+                    <p class="toggle">This is another small paragraph.</p>
+                    <button class="btn" id="toggle">Toggle between hiding and showing the paragraphs</button>
+                </div>
+                <div>
+                    <p class="fade">Demonstrate fadeToggle() with different speed parameters.</p>
+                    <div class="box-container">
+                        <div class="box red" id="div1"></div><br>
+                        <div class="box green" id="div2"></div><br>
+                        <div class="box blue" id="div3"></div>
+                    </div>
+                    <button class="btn" id="fade">Click to fade in/out boxes</button>
+                </div>
+                <div class="slide">
+                    <div id="flip">Click to slide the panel down or up</div>
+                    <div id="panel">Hello world!</div>
+                </div>
+                <div class="animate-section">
+                    <p class="animate">By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+                    <div class="animate-block-container">
+                        <div class="animate-block"></div>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn" id="animate">Start Animation</button>
+                        <button class="btn" id="stop">Stop Animation</button>
+                    </div>
+                </div>
+                <div class="chaining-container">
+                    <p id="p1">jQuery is fun!</p>
+                    <button class="btn" id="chaining">Click me</button>
+                </div>
+            </section>
+        </div>
+        <div class="col-2">
+            <section class="html">
+                <h2>JQuery HTML</h2>
+                <h3>Set Content - text(), html(), and val()</h3>
+                <div class="html-container">
+                    <p id="test1">This is a paragraph.</p>
+                    <p id="test2">This is another paragraph.</p>
+                    <p>Input field:</p>
+                    <input type="text" id="test3" value="Mickey Mouse">
+                    <br>
+                    <br>
+                    <button class="btn btn-animation" id="btn1">Set Text</button>
+                    <button class="btn btn-animation" id="btn2">Set HTML</button>
+                    <button class="btn btn-animation" id="btn3">Set Value</button>
+                </div>
+                <h3>A Callback Function for text(), html(), and val()</h3>
+                <div>
+                    <p id="test-callback-1">This is a <b>bold</b> paragraph.</p>
+                    <p id="test-callback-2">This is another <b>bold</b> paragraph.</p>
+                    <button class="btn btn-animation" id="btn-callback-1">Show Old/New Text</button>
+                    <button class="btn btn-animation" id="btn-callback-2">Show Old/New HTML</button>
+                </div>
+                <h3>Set Attributes - attr()</h3>
+                <div>
+                    <p>Mouse over the link to see that the href attribute has changed and a title attribute is set.</p>
+                    <p><a href="https://www.w3schools.com" title="some title" id="w3s-attr" target="_blank">W3Schools.com</a></p>
+                    <button class="btn btn-animation" id="attr">Change href and title</button>
+                </div>
+                <h3>A Callback Function for attr()</h3>
+                <div>
+                    <p>Mouse over the link (or click on it) to see that the value of the href attribute has changed.</p>
+                    <p><a href="https://www.w3schools.com" id="w3s-callback-attr" target="_blank">W3Schools.com</a></p>
+                    <button class="btn btn-animation" id="callback-attr">Change href Value</button>
+                </div>
+                <h3>jQuery append() Method</h3>
+                <div>
+                    <p class="append">This is a paragraph.</p>
+                    <p class="append">This is another paragraph.</p>
+                    <ol class="append-ol">
+                        <li>List item 1</li>
+                        <li>List item 2</li>
+                        <li>List item 3</li>
+                    </ol>
+                    <button class="btn btn-animation" id="btn-append-1">Append text</button>
+                    <button class="btn btn-animation" id="btn-append-2">Append list items</button>
+                </div>
+                <h3>jQuery prepend() Method</h3>
+                <div>
+                    <p class="prepend">This is a paragraph.</p>
+                    <p class="prepend">This is another paragraph.</p>
+                    <ol class="prepend-ol">
+                        <li>List item 1</li>
+                        <li>List item 2</li>
+                        <li>List item 3</li>
+                    </ol>
+                    <button class="btn btn-animation" id="btn-prepend-1">Prepend text</button>
+                    <button class="btn btn-animation" id="btn-prepend-2">Prepend list item</button>
+                </div>
+                <h3>Add Several New Elements With append() and prepend()</h3>
+                <div class="append-text">
+                    <p>This is a paragraph.</p>
+                    <button class="btn btn-animation" onclick="appendText()">Append text</button>
+                </div>
+                <h3>jQuery after() and before() Methods</h3>
+                <div>
+                    <div class="img-a_b"></div>
+                    <div>
+                        <button class="btn btn-animation" id="btn-a_b-1">Insert before</button>
+                        <button class="btn btn-animation" id="btn-a_b-2">Insert after</button>
+                    </div>
+                </div>
+                <h3>Add Several New Elements With after() and before()</h3>
+                <div>
+                    <div class="img-after"></div>
+                    <p>Click the button to insert text after the image.</p>
+                    <button class="btn btn-animation" onclick="afterText()">Insert after</button>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <p>
+                <a href="https://github.com/ALEVOLDON" target="_blank">github</a>
+            </p>
+        </div>
+    </footer>
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- main js -->
+    <script src="js/main.js"></script>
+    <!-- livereload -->
+    <script>
+    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
+</body>
+
+</html>

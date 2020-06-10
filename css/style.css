@@ -85,22 +85,17 @@ section.effects {
 	justify-content: center;
 
 	position: fixed;
-	/*width: 10px;*/
-	/*height: 10px;*/
 	text-align: center;
 	align-items: center;
 	margin: 1rem;
 	right: 20px;
 	bottom: 25px;
 	border: 20px solid transparent;
-	/*border-radius: 50%;*/
 	border-bottom-color: white; 
-	/*background: transparent;*/
 	color: white;
 	text-decoration: none;
 	z-index: 5;
 	transition: 1s;
-
 }
 
 .up::after {

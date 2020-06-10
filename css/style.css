@@ -199,10 +199,41 @@ section.effects {
 }
 
 .btn-animation {
-	animation-name: btn-animation;
-	animation-duration: 1s;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
+	-webkit-animation-name: btn-animation;
+	        animation-name: btn-animation;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear;
+}
+
+@-webkit-keyframes btn-animation {
+	0% {
+	background: 
+	linear-gradient(0deg, transparent, lightblue);
+	}
+
+	25% {
+	background: 
+	linear-gradient(72deg, transparent, lightblue);
+	}
+
+	50% {
+	background: 
+	linear-gradient(144deg, transparent, lightblue);
+	}
+
+	75% {
+	background: 
+	linear-gradient(216deg, transparent, lightblue);
+	}
+
+	100% {
+	background: 
+	linear-gradient(288deg, transparent, lightblue);
+	}
 }
 
 @keyframes btn-animation {
